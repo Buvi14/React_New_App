@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import Main from './Components/Main/Main';
-import Menu from './Components/Menu/Menu';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
+// import Main from './Components/Main/Main';
+// import Menu from './Components/Menu/Menu';
+// import Header from './Components/Header/Header';
+// import Footer from './Components/Footer/Footer';
 import Counter from './Components/Counter/Counter';
 import User from './Components/User/User';
 import Navbar from './Components/Navbar/Navbar'
@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/counter" component={Counter} />
-        <Route path="/user" component={User} />
+        <Route path="/users" component={User} />
         <Route path="/post" component={Post} />
       </Switch>
       </Router>

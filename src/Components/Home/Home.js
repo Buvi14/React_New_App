@@ -1,16 +1,17 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import {Link} from "react-router-dom"
 
 export default function Home() {
   return (
-    <>
+    <React.StrictMode>
       <div className="container mt-4">
         <div
-          classname="row"
+          className="row"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          {/* Carousel using Reacg Bootstrap */}
-          <Carousel style={{ width: "50%" }}>
+          {/* Carousel using React Bootstrap */}
+          <Carousel style={{ width: "90%" }}>
             <Carousel.Item interval={2000}>
               <img
                 className="d-block w-100"
@@ -161,14 +162,14 @@ export default function Home() {
       <footer className="container-fluid bg-dark mt-5 row">
         <div
           className="text-center p-4 text-white"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05);"}}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)"}}
         >
           © 2021 Copyright:
-          <a className="text-reset fw-bold">
+          <Link to="/#" className="text-reset fw-bold">
             Footer Content
-          </a>
+          </Link>
         </div>
       </footer>
-    </>
+    </React.StrictMode>
   );
 }
